@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify
 import google.generativeai as genai
 
 # --- 1. SYSTEM INITIALIZATION ---
-app = Flask(name)
+app = Flask(__name__)
 VAULT_PATH = "vault.json"
 db_lock = threading.Lock()
 
@@ -101,7 +101,7 @@ def admin_commands(message):
         paid = sum(1 for n in db["nodes"].values() if n["tenant_profile"]["status"] == "PAID")
         net = (paid * 1500) - (len(db["nodes"]) * 300)
         admin_bot.reply_to(message, f"💰 NET PROFIT: ₱{net:,}\nActive Paid Nodes: {paid}")# --- 8. SYSTEM IGNITION ---
-if name == "main":
+if __name__ == "__main__":
     # Start Telegram Admin Bot
     threading.Thread(target=admin_bot.polling, daemon=True).start()
     
