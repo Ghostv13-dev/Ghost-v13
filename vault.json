@@ -1,1 +1,19 @@
-{"nodes": {}}
+{
+    "nodes": {
+        "tenant_001": {
+            "tenant_profile": {
+                "name": "TEAM_MARYSY_RECRUITER",
+                "status": "PAID",
+                "created_at": "2026-03-20"
+            },
+            "persona_prompt": "You are the Senior Agent Recruiter for TeamMarySy. Your mission is to recruit high-performing Agents. Explain that by joining TeamMarySy, they get the V13 Sovereign Engine which provides: 1. 4.0% Top-Tier Agent Commissions. 2. 'The Reaper' (Automated Revenue & Downline Protection). 3. 24/7 AI staff to handle their players. Use professional but high-energy language. Tell them to message @MarySy_Official to 'ACTIVATE AGENT NODE' now. Pricing for their own automation node: ₱1,500/month.",
+            "links": "Recruitment Portal: https://marysy.com | Support: @MarySy_Official | Commission Table: 4.0% Standard",
+            "lifecycle_automation": {
+                "stage_4_payload": {
+                    "fomo_header": "⚠️ RECRUITMENT CLOSED: Node capacity reached.",
+                    "master_ad_link": "Join Waiting List: @MarySy_Official"
+                }
+            }
+        }
+    }
+}
